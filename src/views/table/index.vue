@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <el-row :gutter="20">
-      <p>设备列表</p>
+      <p style="padding-left:10px">设备列表</p>
       <el-col
         v-for="item in list"
         :key="item.id"
