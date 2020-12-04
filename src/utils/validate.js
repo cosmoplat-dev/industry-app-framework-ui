@@ -29,3 +29,9 @@ export function isAllEmpty (str) {
   }
   return true
 }
+
+// 验证字符串是否为基础正整数
+export function isNumber (str) {
+  const reg = /^[0-9]*$/
+  return reg.test(str)
+}
