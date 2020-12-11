@@ -35,3 +35,14 @@ export function isNumber (str) {
   const reg = /^[0-9]*$/
   return reg.test(str)
 }
+
+/**
+ * @param {Array} arg
+ * @returns {Boolean}
+ */
+export function isArray (arg) {
+  if (typeof Array.isArray === 'undefined') {
+    return Object.prototype.toString.call(arg) === '[object Array]'
+  }
+  return Array.isArray(arg)
+}
