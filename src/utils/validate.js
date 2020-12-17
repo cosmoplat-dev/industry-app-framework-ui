@@ -46,3 +46,14 @@ export function isArray (arg) {
   }
   return Array.isArray(arg)
 }
+
+/**
+ * @param {string} str
+ * @returns {Boolean}
+ */
+export function isString(str) {
+  if (typeof str === 'string' || str instanceof String) {
+    return true
+  }
+  return false
+}
