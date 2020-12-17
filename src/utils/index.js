@@ -207,3 +207,17 @@ export function get_time_diff(time, nowTime) {
 
   return diff
 }
+
+/**
+ * @param {Array} actual
+ * @returns {Array}
+ */
+export function cleanArray(actual) {
+  const newArray = []
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i]) {
+      newArray.push(actual[i])
+    }
+  }
+  return newArray
+}
