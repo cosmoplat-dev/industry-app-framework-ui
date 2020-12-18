@@ -35,6 +35,14 @@ export function isNumber (str) {
   const reg = /^[0-9]*$/
   return reg.test(str)
 }
+/**
+ * @param {string} str
+ * @returns {Boolean}
+ */
+export function validLowerCase(str) {
+  const reg = /^[a-z]+$/
+  return reg.test(str)
+}
 
 /**
  * @param {Array} arg
